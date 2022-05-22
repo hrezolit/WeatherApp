@@ -13,6 +13,11 @@
 		D5E5175328337B06007A5BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E5175128337B06007A5BC9 /* Main.storyboard */; };
 		D5E5175528337B0A007A5BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E5175428337B0A007A5BC9 /* Assets.xcassets */; };
 		D5E5175828337B0A007A5BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E5175628337B0A007A5BC9 /* LaunchScreen.storyboard */; };
+		D5E51765283380C2007A5BC9 /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E51764283380C2007A5BC9 /* ViewController+alertController.swift */; };
+		D5E5176728360B38007A5BC9 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E5176628360B38007A5BC9 /* NetworkWeatherManager.swift */; };
+		D5E5176928360E4F007A5BC9 /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E5176828360E4F007A5BC9 /* Constance.swift */; };
+		D5E5176B28361949007A5BC9 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E5176A28361949007A5BC9 /* CurrentWeatherData.swift */; };
+		D5E5176D28361F92007A5BC9 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E5176C28361F92007A5BC9 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		D5E5175428337B0A007A5BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E5175728337B0A007A5BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5E5175928337B0A007A5BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E51764283380C2007A5BC9 /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
+		D5E5176628360B38007A5BC9 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
+		D5E5176828360E4F007A5BC9 /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		D5E5176A28361949007A5BC9 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
+		D5E5176C28361F92007A5BC9 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		D5E5174A28337B06007A5BC9 /* WheatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				D5E5175F28337DB8007A5BC9 /* Extensions */,
+				D5E5176128337DEB007A5BC9 /* Views */,
+				D5E5176028337DD8007A5BC9 /* Models */,
+				D5E5176228337DFF007A5BC9 /* ViewControllers */,
+				D5E5176328337E1F007A5BC9 /* Supporting Files */,
+			);
+			path = WheatherApp;
+			sourceTree = "<group>";
+		};
+		D5E5175F28337DB8007A5BC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5E51764283380C2007A5BC9 /* ViewController+alertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D5E5176028337DD8007A5BC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5E5176628360B38007A5BC9 /* NetworkWeatherManager.swift */,
+				D5E5176A28361949007A5BC9 /* CurrentWeatherData.swift */,
+				D5E5176C28361F92007A5BC9 /* CurrentWeather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5E5176128337DEB007A5BC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5E5175128337B06007A5BC9 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5E5176228337DFF007A5BC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E5174F28337B06007A5BC9 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D5E5176328337E1F007A5BC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5E5176828360E4F007A5BC9 /* Constance.swift */,
 				D5E5174B28337B06007A5BC9 /* AppDelegate.swift */,
 				D5E5174D28337B06007A5BC9 /* SceneDelegate.swift */,
-				D5E5174F28337B06007A5BC9 /* ViewController.swift */,
-				D5E5175128337B06007A5BC9 /* Main.storyboard */,
 				D5E5175428337B0A007A5BC9 /* Assets.xcassets */,
 				D5E5175628337B0A007A5BC9 /* LaunchScreen.storyboard */,
 				D5E5175928337B0A007A5BC9 /* Info.plist */,
 			);
-			path = WheatherApp;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5E5175028337B06007A5BC9 /* ViewController.swift in Sources */,
+				D5E51765283380C2007A5BC9 /* ViewController+alertController.swift in Sources */,
+				D5E5176D28361F92007A5BC9 /* CurrentWeather.swift in Sources */,
+				D5E5176928360E4F007A5BC9 /* Constance.swift in Sources */,
+				D5E5176728360B38007A5BC9 /* NetworkWeatherManager.swift in Sources */,
 				D5E5174C28337B06007A5BC9 /* AppDelegate.swift in Sources */,
+				D5E5176B28361949007A5BC9 /* CurrentWeatherData.swift in Sources */,
 				D5E5174E28337B06007A5BC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VT76HWWZKL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WheatherApp/Info.plist;
+				INFOPLIST_FILE = "WheatherApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VT76HWWZKL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WheatherApp/Info.plist;
+				INFOPLIST_FILE = "WheatherApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
