@@ -1,10 +1,5 @@
 # WeatherApp
 
-[![Swift Version][swift-image]][swift-url]
-![Platform][platform-image]
-![architecture]
-[![Framework][framework-image]][framework-url]
-
 <br />
 <p align="left">
   <a href="https://github.com/hrezolit/Scrumdinger/tree/main/WeatherApp">
@@ -13,6 +8,12 @@
 
   </p>
 </p>
+
+[![Swift Version][swift-image]][swift-url]
+![Platform][platform-image]
+![architecture]
+[![Framework][framework-image]][framework-url]
+
 WeatherApp with dynamic changing background & city searching
 
 ## Table of contents:
